@@ -1,0 +1,15 @@
+<ion-header>
+  <ion-toolbar color="light">
+    <ion-title>Galería</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-row *ngIf="galeria">
+    <ion-col *ngFor="let foto of galeria.content " size="4">
+      <ion-card (click)="abrirFoto(foto)">
+        <img width="100%" [src]="foto" alt="" >
+      </ion-card>
+    </ion-col>
+  </ion-row>
+</ion-content>

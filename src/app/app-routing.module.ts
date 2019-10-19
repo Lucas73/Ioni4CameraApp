@@ -5,6 +5,8 @@ const routes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full' },
   { path: 'home', loadChildren: () => import('./home/home.module').then( m => m.HomePageModule)},
   { path: 'tabs', loadChildren: './tabs/tabs.module#TabsPageModule' },
+  { path: 'galeria', loadChildren: './galeria/galeria.module#GaleriaPageModule' },
+  { path: 'mostrar-foto', loadChildren: './mostrar-foto/mostrar-foto.module#MostrarFotoPageModule' },
 ];
 
 @NgModule({
